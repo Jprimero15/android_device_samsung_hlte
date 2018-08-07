@@ -37,13 +37,7 @@
     },
     {
         "remote":       "github",
-        "repository":   "Jprimero15/android_packages_resources_devicesettings",
-        "target_path":  "packages/resources/devicesettings",
-        "revision":     "lineage-15.1"
-    },
-	{
-        "remote":       "github",
-        "repository":   "TheMuppets/proprietary_vendor_samsung",
+        "repository":   "Jprimero15/proprietary_vendor_samsung_hltexxx",
         "target_path":  "vendor/samsung",
         "revision":     "lineage-15.1"
     }
