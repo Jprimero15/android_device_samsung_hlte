@@ -3,7 +3,7 @@
         "remote":       "github",
         "repository":   "Jprimero15/android_device_samsung_hlte",
         "target_path":  "device/samsung/hlte",
-        "revision":     "lineage-15.1"
+        "revision":     "xtended"
     },
     {
         "remote":       "github",
@@ -33,6 +33,12 @@
         "remote":       "github",
         "repository":   "Jprimero15/android_hardware_samsung",
         "target_path":  "hardware/samsung",
+        "revision":     "lineage-15.1"
+    },
+    {
+        "remote":       "github",
+        "repository":   "Jprimero15/android_packages_resources_devicesettings",
+        "target_path":  "packages/resources/devicesettings",
         "revision":     "lineage-15.1"
     },
     {

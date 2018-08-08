@@ -61,17 +61,9 @@
           config to 7. -->
      <integer name="config_deviceHardwareKeys">71</integer>
      
-     <!-- Button Backlight -->
-     <bool name="config_button_brightness_support">true</bool>
+     <!-- Whether to enable doze always on -->
+     <bool name="config_enableDozeAlwaysOn">true</bool>
 
-    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-    in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
-
-     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
-    <bool name="config_dozePulsePickup">true</bool>
-
-    <!-- AlwaysOnDisplay  -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
-     
+     <!-- Whether device supports an alt. ambient display -->
+     <bool name="config_alt_ambient_display">true</bool>     
 </resources>
