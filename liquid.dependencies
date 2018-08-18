@@ -3,7 +3,7 @@
         "remote":       "github",
         "repository":   "Jprimero15/android_device_samsung_hlte",
         "target_path":  "device/samsung/hlte",
-        "revision":     "lineage-15.1"
+        "revision":     "liquid"
     },
     {
         "remote":       "github",

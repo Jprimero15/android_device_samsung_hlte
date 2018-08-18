@@ -17,9 +17,9 @@
 
 $(call inherit-product, device/samsung/hlte/full_hlte.mk)
 
-# Inherit some common DotOS  stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common Liquid Remix stuff.
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hlte
-PRODUCT_NAME := dot_hlte
+PRODUCT_NAME := liquid_hlte
