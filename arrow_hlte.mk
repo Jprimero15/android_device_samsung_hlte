@@ -18,12 +18,12 @@
 # Inherit from hlte device
 $(call inherit-product, device/samsung/hlte/full_hlte.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Include Bootanimation configuration
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hlte
-PRODUCT_NAME := aosp_hlte
+PRODUCT_NAME := arrow_hlte
