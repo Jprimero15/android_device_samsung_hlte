@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "Jprimero15/platform_device_samsung_hlte-common",
+    "target_path": "device/samsung/hlte-common",
+    "branch":      "9.x"
+  }
+]

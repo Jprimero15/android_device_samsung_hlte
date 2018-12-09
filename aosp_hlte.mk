@@ -13,10 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
+# Inherit from hlte device
 $(call inherit-product, device/samsung/hlte/full_hlte.mk)
 
+# Inherit some common Evolution-X stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Include Bootanimation configuration
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_DEVICE := hlte
-PRODUCT_NAME := lineage_hlte
+PRODUCT_NAME := aosp_hlte
