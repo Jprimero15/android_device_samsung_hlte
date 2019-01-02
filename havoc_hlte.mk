@@ -16,11 +16,11 @@
 # Inherit from hlte device
 $(call inherit-product, device/samsung/hlte/full_hlte.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common Havoc-OS stuff.
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Include Bootanimation configuration
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_DEVICE := hlte
-PRODUCT_NAME := aosp_hlte
+PRODUCT_NAME := havoc_hlte
