@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_hlte.mk
+    $(LOCAL_DIR)/arrow_hlte.mk
+
+COMMON_LUNCH_CHOICES := \
+    arrow_hlte-userdebug \
+    arrow_hlte-eng \
+    arrow_hlte-user
