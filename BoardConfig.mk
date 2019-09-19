@@ -19,8 +19,8 @@ include device/samsung/hlte-common/BoardConfigCommon.mk
 TARGET_OTA_ASSERT_DEVICE := hlte,hltespr,hltexx
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8974
-TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
+TARGET_INIT_VENDOR_LIB := libinit_hlte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_hlte
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_hlte_bcm2079x_defconfig
