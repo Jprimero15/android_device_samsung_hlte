@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_hlte.mk
+    $(LOCAL_DIR)/havoc_hlte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_hlte-user \
-    lineage_hlte-userdebug \
-    lineage_hlte-eng
+    havoc_hlte-user \
+    havoc_hlte-userdebug \
+    havoc_hlte-eng
