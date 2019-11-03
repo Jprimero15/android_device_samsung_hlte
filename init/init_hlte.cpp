@@ -73,37 +73,24 @@ void property_override(char const prop[], char const value[], bool add = true)
     }
 }
 
-void set_rild_libpath(char const *variant)
-{
-    std::string libpath("/system/vendor/lib/libsec-ril.");
-    libpath += variant;
-    libpath += ".so";
-
-    property_override("rild.libpath", libpath.c_str());
-}
-
 void cdma_properties(char const *operator_alpha,
         char const *operator_numeric,
         char const *default_network,
-        char const *cdma_sub,
-        char const *rild_lib_variant)
+        char const *cdma_sub)
 {
     /* Dynamic CDMA Properties */
     property_set("ro.cdma.home.operator.alpha", operator_alpha);
     property_set("ro.cdma.home.operator.numeric", operator_numeric);
     property_set("ro.telephony.default_network", default_network);
     property_set("ro.telephony.default_cdma_sub", cdma_sub);
-    set_rild_libpath(rild_lib_variant);
 
     /* Static CDMA Properties */
     property_set("ril.subscription.types", "NV,RUIM");
     property_set("telephony.lteOnCdmaDevice", "1");
 }
 
-void gsm_properties(char const *rild_lib_variant)
+void gsm_properties()
 {
-    set_rild_libpath(rild_lib_variant);
-
     property_set("ro.telephony.default_network", "9");
     property_set("telephony.lteOnGsmDevice", "1");
 }
@@ -128,7 +115,7 @@ void vendor_load_properties() {
             set_ro_product_prop(source, "model", "SM-9005");
         }
         property_override("ro.build.description", "hltexx-user 5.0 LRX21V N9005XXSGBRI2 release-keys");
-        gsm_properties("gsm");
+        gsm_properties();
     } else if (bootloader.find("N900P") == 0) {
         /* hltespr - Sprint */
        for (const auto &source : ro_product_props_default_source_order) {
@@ -137,9 +124,9 @@ void vendor_load_properties() {
             set_ro_product_prop(source, "model", "SM-900P");
         }
         property_override("ro.build.description", "hltespr-user 5.0 LRX21V N900PVPSEPL1 release-keys");
-        cdma_properties("Sprint", "310120", "8", "1", "spr");
+        cdma_properties("Sprint", "310120", "8", "1");
     } else {
-        gsm_properties("gsm");
+        gsm_properties();
     }
 
     std::string device = GetProperty("ro.product.device", "");
