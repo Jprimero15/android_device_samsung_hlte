@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_hlte.mk
+    $(LOCAL_DIR)/derp_hlte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_hlte-user \
-    lineage_hlte-userdebug \
-    lineage_hlte-eng
+    derp_hlte-user \
+    derp_hlte-userdebug \
+    derp_hlte-eng
