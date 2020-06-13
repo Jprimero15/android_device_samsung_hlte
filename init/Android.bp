@@ -19,7 +19,7 @@ cc_library_static {
     recovery_available: true,
     srcs: ["init_hlte.cpp"],
     include_dirs: [
-        "device/samsung/msm8974-common/init",
+        "device/samsung/hlte-common/init",
         "system/core/base/include",
     ],
     whole_static_libs: ["libinit_helpers_sam8974"]
